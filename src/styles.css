@@ -8,32 +8,40 @@
   }
 
   /* Container/Wrappers para definir el layout de la pagina web y mantenerla consistente */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    -ms-text-size-adjust:100%;-webkit-text-size-adjust:100%
+}
+
 .wrapper{
     margin-right: auto;
     margin-left: auto;
       
-    max-width: 960px;
+    max-width: 1900px;
     
     padding-right: 10px;
     padding-left: 10px;
+
 }
 
 .flex-container {
     display: flex;
-    background-color: dodgerblue;
+}
+.flex-container > a{
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 9px;
+    border-color: #19646A;
+    cursor: pointer;
 }
 
-.flex-container > div{
-    background-color: #f1f1f1;
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
+.socials{
+    justify-content: flex-end;
 }
 
-.flex-container > header{
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 *, *:before, *:after {
     /* Sistemas/exploradores viejos */
@@ -43,3 +51,4 @@
     /* La mayoria de los sistemas/exploradores */
     box-sizing: border-box;
   }
+  
