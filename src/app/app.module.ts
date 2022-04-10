@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+// Iconos FontAwesome.
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+
 import { AppComponent } from './app.component';
 
 
@@ -9,9 +12,13 @@ import { AppComponent } from './app.component';
     AppComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  // Imports de Font Awesome
+  constructor(library: FaIconLibrary){}
+ }
