@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+:host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Container/Wrappers para definir el layout de la pagina web y mantenerla consistente */
+.wrapper{
+    margin-right: auto;
+    margin-left: auto;
+      
+    max-width: 960px;
+    
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.flex-container {
+    display: flex;
+    background-color: dodgerblue;
+}
+
+.flex-container > div{
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.flex-container > header{
+    justify-content: space-between;
+    align-items: center;
+}
+
+*, *:before, *:after {
+    /* Sistemas/exploradores viejos */
+    -webkit-box-sizing: border-box; 
+    /* Firefox 28 Android/Escritorio- */
+    -moz-box-sizing: border-box;
+    /* La mayoria de los sistemas/exploradores */
+    box-sizing: border-box;
+  }
