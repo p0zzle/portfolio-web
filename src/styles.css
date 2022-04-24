@@ -120,4 +120,29 @@ body{
     /* La mayoria de los sistemas/exploradores */
     box-sizing: border-box;
   }
+  /* Diseño general de las paginas, wrapper cubre el divisor principal, flex-1 es left-div, flex-2 center-div, flex-3 right-div*/
+  .flex-wrapper{display:flex;min-height: 900px;}
+  .flex-1{
+      flex:1;
+      order:1;
+      background-color: #032E3E;
+      width:100px;
+  }
+  .flex-2{
+      flex:6;
+      order:2;
+      align-items:center;
+      display:flex;
+      color:#BDC8D8;
+      flex-direction:column;
+      background-color:#073849;
+      border-right:2px groove white;
+      border-left: 2px groove white;
+  }
+  .flex-3{
+      flex:1;
+      order:3;
+      background-color: #032E3E;
+      width:100px;
+  }
   
